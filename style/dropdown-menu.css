@@ -1,0 +1,122 @@
+/* ********************************************
+    auteur: Sonja Rouwhorst
+    datum: 2016-10-19
+   ******************************************** */
+
+/* ****************************************
+    GENERAL STUFF
+   **************************************** */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* ****************************************
+   CONTAINERS en HEADING
+   **************************************** */
+.cmda-dropdown-menu {
+	position:fixed;
+	width:100%;
+	min-height:2.75rem;
+}
+
+.cmda-dropdown-menu h1 {
+	margin:0;
+	line-height:2.75rem;
+	padding:0 2.75rem 0 1rem;
+	background:grey;
+	color:white;
+}
+
+main {
+    padding: 3.75rem 1em 1em;
+}
+
+/* ****************************************
+    PANCAKE & CLOSE ICON
+   **************************************** */
+.cmda-dropdown-menu #cmda-dropdown-icon {
+    position:absolute;
+	top:.5rem;
+	right:.5rem;
+	font-size: 1.75rem;
+    height: 1.75rem;
+	line-height: 1.5rem;
+	width:1.75rem;
+	text-align:center;
+	border:solid 1px white;
+	border-radius:.25rem;
+    cursor: pointer;
+    -moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+.cmda-dropdown-menu #cmda-dropdown-icon::after {
+    color:white;
+	content: "\2261"; /* utf-8 code voor pannenkoek symbool */
+}
+.cmda-dropdown-menu #cmda-dropdown-icon.close-icon {
+	line-height: 1.25rem;
+}
+.cmda-dropdown-menu #cmda-dropdown-icon.close-icon::after {
+    content: "\2A2F"; /* utf-8 code voor kruis */
+}
+
+/* ****************************************
+    DROPDOWN MENU
+   **************************************** */
+
+.cmda-dropdown-menu ul {
+    max-height:0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+    
+    list-style-type: none;
+	overflow:hidden;
+	-webkit-transition:.5s ease-out;
+	transition:.5s ease-out;
+}
+.cmda-dropdown-menu .show {
+	max-height:32rem;
+}
+.cmda-dropdown-menu li {
+    border-bottom: 1px dotted white;
+}
+.cmda-dropdown-menu li:last-of-type {
+    border: none;
+}
+.cmda-dropdown-menu a {
+    position:relative;
+	display: block;
+    padding: .75rem 2rem .75rem 1rem;
+	line-height:1.25rem;
+	background-color: rgba(179,179,179,.92);
+	color:black;
+}
+.cmda-dropdown-menu a:hover {
+    background-color: rgba(128,128,128,.92);
+	color:white;
+}
+.cmda-dropdown-menu a::after {
+    content: "\203A"; /* utf-8 code voor > teken */
+	position: absolute;
+    right: 1rem;
+	top:50%;
+    font-size:1.3rem;
+	line-height:2.75rem;
+	color:black;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.cmda-dropdown-menu a:hover::after {
+	color:white;
+}
