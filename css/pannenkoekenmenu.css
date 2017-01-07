@@ -1,0 +1,168 @@
+/* ****************************************
+    auteur: Sonja Rouwhorst
+    datum: 2016-10-18
+   **************************************** */
+
+/* ****************************************
+    GENERAL STUFF
+   **************************************** */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	padding:0;
+    overflow-x: hidden;
+}
+
+/* ****************************************
+    COLORS
+   **************************************** */
+html {
+    background-color: white;
+}
+.cmda-sidemenu #pancake-icon {
+    background-color: rgba(210,81,94,.8);
+    color: white;
+	border-color:black;
+}
+.cmda-sidemenu nav {
+    background-color: lightgray;
+    color: black;
+}
+.cmda-sidemenu nav li:hover {
+    background-color: white;
+}
+.cmda-sidemenu nav a {
+    color: black;
+}
+.cmda-sidemenu nav li {
+    border-bottom-color: darkgray;
+}
+
+/* ****************************************
+    MAIN
+   **************************************** */
+.cmda-sidemenu main {
+    margin: 0;
+    padding: 0;
+    -webkit-transition: margin .5s ease-in-out;
+    transition: margin .5s ease-in-out;
+}
+
+.cmda-sidemenu main.move-right {
+    margin-left: calc(100vw - 2.75rem);
+    margin-right: calc(2.75rem - 100vw);
+}
+
+.cmda-sidemenu main h1 {
+	line-height:2.75rem;
+	padding-left:2.75rem;
+	margin:0;
+	background-color:rgb(210,81,94);
+	color:white;
+}
+
+.cmda-sidemenu main p {
+	padding:0 1em;
+}
+
+/* ****************************************
+    PANCAKE & CLOSE ICON
+   **************************************** */
+.cmda-sidemenu #pancake-icon {
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    font-size: 1.75rem;
+	width:1.75rem;
+	height:1.75rem;
+	line-height:1.5rem;
+	text-align:center;
+	border-style:solid;
+	border-width:1px;
+	border-radius:.25rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: left .5s ease-in-out;
+    transition: left .5s ease-in-out;
+	z-index:100;
+}
+.cmda-sidemenu #pancake-icon:after {
+    content: "\2261"; /* utf-8 code voor pannenkoek symbool */
+}
+
+.cmda-sidemenu #pancake-icon.close-icon {
+    line-height: 1.25rem;
+	left: calc(100% - 2.25rem);
+}
+
+.cmda-sidemenu #pancake-icon.close-icon:after {
+    content: "\2A2F"; /* utf-8 code voor kruis */
+}
+
+/* ****************************************
+    NAV
+   **************************************** */
+
+.cmda-sidemenu nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: calc(2.75rem - 100vw);
+    width: calc(100vw - 2.75rem);
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-property: box-shadow, left;
+    transition-property: box-shadow, left;
+	
+	overflow-y:scroll;
+	-ms-overflow-style:none;
+}
+
+.cmda-sidemenu nav::-webkit-scrollbar {
+	width: 0 !important;
+	height: 0 !important;
+}
+
+.cmda-sidemenu nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cmda-sidemenu nav li {
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+}
+
+.cmda-sidemenu nav a {
+    text-decoration: none;
+	line-height:2.75rem;
+	padding:0 .75rem;
+}
+
+.cmda-sidemenu nav.show {
+    left: 0;
+    box-shadow: .25rem 0 .5rem 0 rgba(0,0,0,.5);
+}
+
+/* dit stukje code zorgt voor de > tekens achter elk menu-item */
+/* je kunt deze hele regel verwijderen als je het niet mooi vindt */
+.cmda-sidemenu nav.show li:after {
+    position: absolute;
+    right: 1rem;
+    content: "\203A"; /* utf-8 code voor > teken */
+    font: bold 1.3rem sans-serif;
+	line-height:2.75rem;
+}
