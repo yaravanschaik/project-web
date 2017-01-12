@@ -14,79 +14,111 @@
         <a href="verhaalzoon.html"><img class="ns-logo" src="../img/ns%20logo.png" alt="NS-logo"></a>
         <ul>
             <li>
-                <a class="profiel" href="inloggenn.html"></a>
-                <img class="profileicon" src="../img/avatar.png" alt="profiel">
-                <a class="check" href="opgeslagen.html"><img class="checkicon" src="../img/check-mark.png" alt="checkicon"> </a>
+                <li>
 
-                <a class="history" href="history.html"><img class="historyicon" src="../img/history.png" alt="historyicon"> </a>
-            </li>
+                    <a href="inloggenn.html"><img class="profileicon" src="../img/avatar.png" alt="profiel"></a>
+                    <a class="check" href="opgeslagen.html"><img class="checkicon" src="../img/check-mark.png" alt="checkicon"> </a>
+
+                    <a class="history" href="history.html"><img class="historyicon" src="../img/history.png" alt="historyicon"> </a>
+                </li>
         </ul>
 
-        <a href="verhaalzoon.html"><h1> 99 Verhalen voor onderweg</h1></a>
+        <a href="verhaalzoon.html"><h1> 0 - 500 woorden / fictie</h1></a>
+        <form class="filter">
+            <select name="aantal woorden">
+                <option>aantal woorden</option>
+                <option>0-500 woorden(0-2 minuten)</option>
+                <option>501-1000 woorden(2-4 minuten)</option>
+                <option>1001-1500 woorden(4-6 minuten)</option>
+                <option>1500+ woorden(6+ minuten)</option>
+            </select>
+            <select name="aantal lezers">
+                <option>aantal lezers</option>
+                <option>1000+ lezers</option>
+                <option>501 - 1000 lezers</option>
+                <option>101 - 500 lezers</option>
+                <option>0 - 100 lezers</option>
+            </select>
+            <select name="genre">
+                <option>genre</option>
+                <option>humor</option>
+                <option>fantasie</option>
+                <option>fictie</option>
+                <option>horror</option>
+            </select>
+            <select name="publicatie datum">
+                <option>publicatie datum</option>
+                <option>vandaag</option>
+                <option>deze week</option>
+                <option>meer dan 1 week geleden</option>
+                <option>meer dan 1 maand geleden</option>
+            </select>
+        </form>
     </header>
     <header class="header2">
-        <a href="verhaalzoon.html"><h1 class="titelsmall"> 99 Verhalen voor onderweg</h1></a>
-        <a href="verhaalzoon.html"><img class="menuicon" src="../img/menuicon.png" alt="menuicon"></a>
+        <a href="verhaalzoon.html"><h1 class="titelsmall"> 0 - 500 woorden / fictie </h1></a>
+        <a href="verhaalzoon.html"><img id="menuicon" src="../img/menuicon.png" alt="menuicon"></a>
 
     </header>
-
-    <form class="filter">
-        <select name="aantal woorden">
-            <option>aantal woorden</option>
-            <option>0-500 woorden</option>
-            <option>501-1000 woorden</option>
-            <option>1001-1500 woorden</option>
-            <option>1500+ woorden</option>
-        </select>
-        <select name="aantal lezers">
-            <option>aantal lezers</option>
-            <option>1 - 100 lezers</option>
-            <option>101 - 500 lezers</option>
-            <option>501 - 1000 lezers</option>
-            <option>1001 + lezers</option>
-        </select>
-        <select name="genre">
-            <option>genre</option>
-            <option>humor</option>
-            <option>fantasie</option>
-            <option>fictie</option>
-            <option>non-fictie</option>
-        </select>
-        <select name="publicatie datum">
-            <option>publicatie datum</option>
-            <option>vandaag</option>
-            <option>deze week</option>
-            <option>meer dan 1 week geleden</option>
-            <option>meer dan 1 maand geleden</option>
-        </select>
-    </form>
 
     <img class="bannerfoto" src="../img/papers.png" alt="boek">
 
 
-    <form class="checkboxesmenu">
-        <input type="checkbox" name="aantal woorden" value="0-500"> 0 - 500 woorden
-        <br>
-        <input type="checkbox" name="aantal woorden" value="501-1000"> 501 - 1000 woorden
-        <br>
-        <input type="checkbox" name="aantal woorden" value="1001-1500"> 1001 - 1500 woorden
-        <br>
-        <input type="checkbox" name="aantal woorden" value="1500+"> 1500+ woorden
-        <br>
-    </form>
-    <form class="checkboxesmenu2">
+    <fieldset class="checkboxesmenu">
+        <legend>aantal woorden</legend>
+        <label>
+            <input type="checkbox"> 0 - 500 woorden (0-2 minuten) </label>
+        <label>
+            <input type="checkbox"> 501 - 1000 woorden (2-4 minuten) </label>
+        <label>
+            <input type="checkbox"> 1001 - 1500 woorden (4-6 minuten) </label>
+        <label>
+            <input type="checkbox"> 1500+ woorden (6+ minuten)
+        </label>
+    </fieldset>
 
-        <input type="checkbox" name="aantal lezers" value="0-100"> 0 - 100 lezers
-        <br>
-        <input type="checkbox" name="aantal lezers" value="101-500"> 101 - 500 lezers
-        <br>
-        <input type="checkbox" name="aantal lezers" value="501-1000"> 501 - 1000 lezers
-        <br>
-    </form>
+    <fieldset class="checkboxesmenu2">
+        <legend>aantal lezers</legend>
+        <label>
+            <input type="checkbox"> 1000+ lezers </label>
+        <label>
+            <input type="checkbox"> 501 - 1000 lezers </label>
+        <label>
+            <input type="checkbox"> 101 - 500 lezers </label>
+        <label>
+            <input type="checkbox"> 0 - 100 lezers </label>
+        </label>
+    </fieldset>
+
+    <fieldset class="checkboxesmenu3">
+        <legend>genre</legend>
+        <label>
+            <input type="checkbox"> humor </label>
+        <label>
+            <input type="checkbox"> fantasie </label>
+        <label>
+            <input type="checkbox"> fictie </label>
+        <label>
+            <input type="checkbox"> horror </label>
+
+    </fieldset>
+    <fieldset class="checkboxesmenu4">
+        <legend>publicatie data</legend>
+        <label>
+            <input type="checkbox"> vandaag </label>
+        <label>
+            <input type="checkbox"> deze week </label>
+        <label>
+            <input type="checkbox"> langer dan 1 week geleden </label>
+        <label>
+            <input type="checkbox"> langer dan 1 maand geleden
+        </label>
+    </fieldset>
+
 
 
     <main>
-        <h2>Fictie &amp; 0 - 500 woorden </h2>
+
         <article>
             <h3>Zoon - 24 juni 2011 by Molovich </h3>
             <h4>456 woorden - fictie</h4>

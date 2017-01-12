@@ -1,3 +1,5 @@
+// dropdown menu //
+
 var menuicon = document.getElementById("menuicon");
 var checkboxesMenu = document.getElementsByClassName("checkboxesmenu")[0];
 var checkboxesMenu2 = document.getElementsByClassName("checkboxesmenu2")[0];

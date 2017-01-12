@@ -20,6 +20,7 @@
                 <a href="inloggenn.html"><img class="profileicon" src="../img/avatar.png" alt="profiel"></a>
                 <a href="opgeslagen.html">
                     <img class="checkicon" src="../img/check-mark.png" alt="checkicon"> </a>
+                <img class="checkmarkgevuld" src="../img/checkmark.png" alt="checkmark gevuld">
                 <a href="history.html">
                     <img class="historyicon" src="../img/history.png" alt="historyicon"> </a>
             </li>
@@ -30,24 +31,24 @@
         <form class="filter">
             <select name="aantal woorden">
                 <option>aantal woorden</option>
-                <option>0-500 woorden</option>
-                <option>501-1000 woorden</option>
-                <option>1001-1500 woorden</option>
-                <option>1500+ woorden</option>
+                <option>0-500 woorden(0-2 minuten)</option>
+                <option>501-1000 woorden(2-4 minuten)</option>
+                <option>1001-1500 woorden(4-6 minuten)</option>
+                <option>1500+ woorden(6+ minuten)</option>
             </select>
             <select name="aantal lezers">
                 <option>aantal lezers</option>
-                <option>1 - 100 lezers</option>
-                <option>101 - 500 lezers</option>
+                <option>1000+ lezers</option>
                 <option>501 - 1000 lezers</option>
-                <option>1001 + lezers</option>
+                <option>101 - 500 lezers</option>
+                <option>0 - 100 lezers</option>
             </select>
             <select name="genre">
                 <option>genre</option>
                 <option>humor</option>
                 <option>fantasie</option>
                 <option>fictie</option>
-                <option>non-fictie</option>
+                <option>horror</option>
             </select>
             <select name="publicatie datum">
                 <option>publicatie datum</option>
@@ -60,46 +61,110 @@
     </header>
 
     <header class="header2">
-        <a href="verhaalzoon.html"><h1 class="titelsmall"> 99 Verhalen voor onderweg</h1></a>
+        <a href="verhaalzoon.html">
+            <h1 class="titelsmall"> 99 Verhalen voor onderweg</h1></a>
         <img id="menuicon" src="../img/menuicon.png" alt="menuicon">
+
+        <fieldset class="checkboxesmenu">
+            <legend>aantal woorden</legend>
+            <label>
+                <input type="checkbox"> 0 - 500 woorden (0-2 minuten) </label>
+            <label>
+                <input type="checkbox"> 501 - 1000 woorden (2-4 minuten) </label>
+            <label>
+                <input type="checkbox"> 1001 - 1500 woorden (4-6 minuten) </label>
+            <label>
+                <input type="checkbox"> 1500+ woorden (6+ minuten)
+            </label>
+        </fieldset>
+
+        <fieldset class="checkboxesmenu2">
+            <legend>aantal lezers</legend>
+            <label>
+                <input type="checkbox"> 1000+ lezers </label>
+            <label>
+                <input type="checkbox"> 501 - 1000 lezers </label>
+            <label>
+                <input type="checkbox"> 101 - 500 lezers </label>
+            <label>
+                <input type="checkbox"> 0 - 100 lezers </label>
+
+        </fieldset>
+
+        <fieldset class="checkboxesmenu3">
+            <legend>genre</legend>
+            <label>
+                <input type="checkbox"> humor </label>
+            <label>
+                <input type="checkbox"> fantasie </label>
+            <label>
+                <input type="checkbox"> fictie </label>
+            <label>
+                <input type="checkbox"> horror </label>
+
+        </fieldset>
+        <fieldset class="checkboxesmenu4">
+            <legend>publicatie data</legend>
+            <label>
+                <input type="checkbox"> vandaag </label>
+            <label>
+                <input type="checkbox"> deze week </label>
+            <label>
+                <input type="checkbox"> langer dan 1 week geleden </label>
+            <label>
+                <input type="checkbox"> langer dan 1 maand geleden
+            </label>
+        </fieldset>
+
+
+
+
+        <!--
         <section>
             <form class="checkboxesmenu">
                 <input type="checkbox" name="aantal woorden" value="0-500"> 0 - 500 woorden
-                <br>
+
                 <input type="checkbox" name="aantal woorden" value="501-1000"> 501 - 1000 woorden
-                <br>
+
                 <input type="checkbox" name="aantal woorden" value="1001-1500"> 1001 - 1500 woorden
-                <br>
+
                 <input type="checkbox" name="aantal woorden" value="1500+"> 1500+ woorden
-                <br>
+
             </form>
             <form class="checkboxesmenu2">
 
-                <input type="checkbox" name="aantal lezers" value="0-100">
-                <!--0 - 100 lezers-->
-                <br>
+                <input type="checkbox" name="aantal lezers" value="0-100"> 0 - 100 lezers
+
                 <input type="checkbox" name="aantal lezers" value="101-500"> 101 - 500 lezers
-                <br>
+
                 <input type="checkbox" name="aantal lezers" value="501-1000"> 501 - 1000 lezers
-                <br>
+
+                <input type="checkbox" name="aantal lezers" value="1001-1500"> 1001 - 1500 lezers
+
+                <input type="checkbox" name="aantal lezers" value="1500+"> 1500+ lezers
+
             </form>
             <form class="checkboxesmenu3">
-                <input type="checkbox" name="aantal lezers" value="0-100"> 0 - 100 lezers
-                <br>
-                <input type="checkbox" name="aantal lezers" value="101-500"> 101 - 500 lezers
-                <br>
-                <input type="checkbox" name="aantal lezers" value="501-1000"> 501 - 1000 lezers
-                <br>
+                <input type="checkbox" name="genre" value="humor"> humor
+
+                <input type="checkbox" name="genre" value="fantasie"> fantasie
+
+                <input type="checkbox" name="genre" value="fictie"> fictie
+
+                <input type="checkbox" name="genre" value="non-fictie"> non-fictie
+
             </form>
             <form class="checkboxesmenu4">
-                <input type="checkbox" name="aantal lezers" value="0-100"> 0 - 100 lezers
-                <br>
-                <input type="checkbox" name="aantal lezers" value="101-500"> 101 - 500 lezers
-                <br>
-                <input type="checkbox" name="aantal lezers" value="501-1000"> 501 - 1000 lezers
-                <br>
+                <input type="checkbox" name="publicatiedata" value="vandaag"> vandaag
+
+                <input type="checkbox" name="publicatiedata" value="deze week"> deze week
+
+                <input type="checkbox" name="publicatiedata" value="meerdan1week"> meer dan 1 week geleden
+
+                <input type="checkbox" name="publicatiedata" value="meerdan1maand"> meer dan 1 maand geleden
             </form>
         </section>
+-->
 
     </header>
 
@@ -126,7 +191,7 @@
             <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer […] </p>
 
 
-            <img class="icon" src="../img/wedding-reception.png">
+            <img class="icon" src="../img/baby.png">
 
             <a href="verhaal1.html">
                 <button>Lees meer... </button>
@@ -140,7 +205,7 @@
         <article>
             <h3>Beroemd - 11 juli 2011 by Molovich </h3>
             <img class="imgartikel" src="../img/beroemd2.jpg">
-            <p class="bannerverhaal"> Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er op zijn schouders rust. Zoon zijn van de grote Max J. Molovich. Je geeft het hem te doen. Het miezert een beetje en het waait. Ik stop mijn hoofd diep in mijn kraag. De mensen kijken om, ik zie ze smoezelen, ik hoor ze fluisteren. ‘Is dat niet..? Volgens mij is dat… Ja hoor, […] </p>
+            <p class="bannerverhaal"> Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er op zijn schouders rust. Zoon zijn van de grote Max J. Molovich. Je geeft het hem te doen. Het miezert een beetje en het waait. Ik stop mijn hoofd diep in mijn kraag. De mensen kijken om, ik zie ze smoezelen, ik hoor ze fluisteren. ‘Is dat niet..? Volgens mij is dat… Ja hoor, zeker weten, het is ‘m.’ Alsof het uitspreken van mijn naam in mijn nabijheid een doodzonde is. Anderen negeren zo achteloos mogelijk […] </p>
 
             <img class="icon" src="../img/famous-cinema-star.png">
             <a>
@@ -148,14 +213,14 @@
             </a>
             <footer>
                 <img class="checkiconstil" src="../img/check-mark.png" alt="checkicon">
-                <img class="commenticonstil" src="../img/comment.png"></footer>
+                <a onclick="scrollToTarget('#')"> <img class="commenticonstil" src="../img/comment.png"></footer>
         </article>
 
         <article>
 
             <h3>Blind - 3 juni 2011 by Molovich </h3>
             <img class="imgartikel" src="../img/blind.jpg">
-            <p class="bannerverhaal"> Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drommen naar buiten. Voorzichtig vind ik mijn weg naar de uitgang en stap uit. Eigenlijk wilde ik mijn zoon meenemen, maar dat mocht niet van m’n vrouw. ‘Je bent blind, gek’, zei ze, ‘wat denk je nu, dat je de kinderwagen als blindegeleidehond kan gebruiken?’ Ik ben op zoek naar Stijloefeningen van Raymond Queneau in de vertaling van Rudy Kousbroek. Het liefst als luisterboek of in braille. Maar als dat er niet is, vind ik wel iemand […]</p>
+            <p class="bannerverhaal"> Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drommen naar buiten. Voorzichtig vind ik mijn weg naar de uitgang en stap uit. Eigenlijk wilde ik mijn zoon meenemen, maar dat mocht niet van m’n vrouw. ‘Je bent blind, gek’, zei ze, ‘wat denk je nu, dat je de kinderwagen als blindegeleidehond kan gebruiken?’ Ik ben op zoek naar Stijloefeningen van Raymond Queneau in de vertaling van Rudy Kousbroek. Het liefst als luisterboek of […]</p>
             <img class="icon" src="../img/hide.png">
             <a>
                 <button>Lees meer... </button>
@@ -173,7 +238,7 @@
             <h3>Zoon - 24 juni 2011 by Molovich </h3>
             <img class="imgartikel" src="../img/zoon2.jpg">
             <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer […] </p>
-            <img class="icon" src="../img/wedding-reception.png">
+            <img class="icon" src="../img/baby.png">
             <a href="verhaal1.html">
                 <button>Lees meer... </button>
             </a>
@@ -189,7 +254,7 @@
             <h3>Zoon - 24 juni 2011 by Molovich </h3>
             <img class="imgartikel" src="../img/zoon2.jpg">
             <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer […] </p>
-            <img class="icon" src="../img/wedding-reception.png">
+            <img class="icon" src="../img/baby.png">
             <a href="verhaal1.html">
                 <button>Lees meer... </button>
             </a>
@@ -200,5 +265,6 @@
 
 </body>
 <script type="text/javascript" src="js/js/javascripts.js"></script>
+<script type="text/javascript" src="js/js/jsvinkje.js"></script>
 
 </html>
