@@ -44,17 +44,7 @@ header {
     z-index: 520;
 }
 
-.header2 {
-    box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
-    background: #fff;
-    left: 0;
-    min-height: 3.75rem;
-    min-width: 320px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 520;
+body > header:nth-of-type(2) {
     margin-top: 3.4em;
     border-top: 1px solid #000382;
 }
@@ -83,22 +73,11 @@ header {
     margin-left: 75%;
     position: fixed;
     margin-top: 1em;
+    transition: transform .2s;
 }
 
-.checkmarkgevuld {
-    display: none;
-    width: 1.6em;
-    height: 1.6em;
-    margin-top: 1em;
-    margin-left: 75%;
-}
-
-.checkmarkgevuld,
-open-checkmark {
-    width: 1.6em;
-    height: 1.6em;
-    margin-top: 1em;
-    margin-left: 75%;
+header ul li a .active {
+    transform: scale(1.5);
 }
 
 .historyicon {
@@ -213,7 +192,7 @@ fieldset {
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    height: 80%;
+    height: 60%;
     background-color: #ffc917;
     display: flex;
     flex-direction: column;
@@ -225,11 +204,17 @@ fieldset {
 }
 
 .inloggen a {
-    display: block;
     margin-top: 0.2em;
-    margin-left: -2%;
     color: #ffffff;
     text-decoration: underline;
+    margin-left: 0.1em;
+}
+
+.linkregisteren {
+    margin-top: 0.4em;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-left: 0.1em;
 }
 
 legend {
@@ -240,17 +225,15 @@ legend {
 .inloggen label {
     /*    display: block;*/
     font-family: Frutiger LT Std;
-    margin-left: -2%;
     width: 100%;
 }
 
 .inloggen button {
-    padding: 1em;
-    width: 10em;
-    margin-left: -2%;
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
-    font-size: 1em;
+    width: 8em;
+    height: 3em;
+    margin-left: 2em;
+    margin-top: 0.6em;
+    font-size: 1.1em;
     background-color: #0079d3;
     font-family: Frutiger LT Std;
     color: #ffffff;
@@ -270,19 +253,19 @@ input:invalid {
 }
 
 .inloggen input[type=text] {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.6em;
     width: 100%;
     height: 3em;
     font-size: inherit;
-    margin-left: -2%;
 }
 
 .inloggen input[type=password] {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.6em;
     width: 100%;
     height: 3em;
     font-size: inherit;
-    margin-left: -2%;
     padding: 0.4em;
 }
 
@@ -291,7 +274,6 @@ input:invalid {
     width: 100%;
     height: 3em;
     font-size: inherit;
-    margin-left: -2%;
     padding: 0.4em;
 }
 
@@ -361,27 +343,30 @@ input:invalid {
 }
 
 .aanmelden input[type=text] {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     width: 100%;
     height: 2em;
     font-size: inherit;
     margin-left: -2%;
+    margin-bottom: 0.6em;
 }
 
 .aanmelden input[type=password] {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     width: 100%;
     height: 2em;
     font-size: inherit;
     margin-left: -2%;
+    margin-bottom: 0.6em;
 }
 
 .aanmelden input[type=email] {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     width: 100%;
     height: 2em;
     font-size: inherit;
     margin-left: -2%;
+    margin-bottom: 0.6em;
 }
 
 ::-webkit-input-placeholder {
@@ -485,8 +470,6 @@ h3 {
     top: 0;
     right: 0;
     width: 7%;
-    margin-right: 0.6em;
-    margin-top: 0.6em;
 }
 
 .imgartikel {
@@ -499,9 +482,12 @@ p {
     font-size: 0.8em;
     color: darkslategrey;
     margin-bottom: 0.8rem;
-    margin-top: 0.4em;
     letter-spacing: 0.01em;
     line-height: normal;
+}
+
+.bannerverhaal {
+    margin-top: 3em;
 }
 
 footer img {
@@ -535,6 +521,11 @@ button:hover {
     margin-left: 0.4em;
     width: 1.5em;
     height: 1.5em;
+    transition: transform .2s;
+}
+
+.active {
+    transform: scale(1.5);
 }
 
 .commenticonstil {
@@ -601,7 +592,7 @@ h4 {
 
 @media screen and (min-width: 55em) {
     .icon {
-        width: 10%;
+        display: none;
     }
     .imgartikel {
         visibility: visible;
@@ -639,7 +630,7 @@ h4 {
         position: absolute;
         top: 0;
         right: 0;
-        width: 12%;
+        width: 9%;
         margin-right: 0.6em;
         margin-top: 0.6em;
     }
@@ -673,11 +664,6 @@ h4 {
         display: none;
         visibility: hidden;
     }
-}
-
-.checkmarkgevuld:not(.open-checkmark) {
-    display: none;
-    visibility: hidden;
 }
 
 @media screen and (min-width: 42em) {}

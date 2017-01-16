@@ -1,12 +1,32 @@
 // javascript voor vinkje //
 
+var checkicon = document.querySelector(".checkicon");
 var checkiconstil = document.querySelector(".checkiconstil");
-var checkmarkgevuld = document.querySelector(".checkmarkgevuld");
 
+
+var vinkjeStatus = false;
 
 function zichtbareVinkje() {
+    // add class 'active'
+    checkicon.classList.add('active');
+
+    setTimeout(function () {
+        checkicon.classList.remove('active');
+    }, 2000);
+
+
+
     console.log("zichtbaar");
-    checkmarkgevuld.classList.toggle("open-checkmark");
+    if (!vinkjeStatus) {
+        checkicon.src = "img/checkmark.png";
+
+    } else {
+        checkicon.src = "img/check-mark.png";
+
+    }
+    vinkjeStatus = !vinkjeStatus; // true = false = true = false
+
+    //classList.toggle("checkmarkgevuld");
 
 }
 
