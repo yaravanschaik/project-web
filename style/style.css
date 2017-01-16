@@ -1,677 +1,689 @@
-@font-face {
-    font-family: Frutiger LT Std;
-    src: url("../fonts/f7e7b4af2b8b6a622ffc59f70392ee04.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Frutiger Bold;
-    src: url("../fonts/frutiger-lt-std-65-bold-58760dbe993b9.otf") format("opentype");
-}
-
-
-/*HEADERS------------------------------------------------------------------------------*/
-
-h1 {
-    color: #000382;
-    font-size: 120%;
-    font-family: Frutiger LT Std;
-    position: fixed;
-    margin-top: 1em;
-    margin-left: 30%;
-}
-
-.titelsmall {
-    color: #000382;
-    font-size: 120%;
-    font-family: Frutiger LT Std;
-    position: fixed;
-    margin-top: 1em;
-    width: 20em;
-    margin-left: 30%;
-    height: 6em;
-}
-
-header {
-    box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
-    background: #fff;
-    left: 0;
-    min-height: 3.75rem;
-    min-width: 320px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 520;
-}
-
-body > header:nth-of-type(2) {
-    margin-top: 3.4em;
-    border-top: 1px solid #000382;
-}
-
-
-/*HEADER ICONS EN LOGOS----------------------------------------------------------------------------------------------*/
-
-.ns-logo {
-    margin-top: -0.6em;
-    position: fixed;
-    height: 5em;
-    width: 8em;
-}
-
-.profileicon {
-    width: 1.5em;
-    height: 1.4em;
-    margin-left: 65%;
-    position: fixed;
-    margin-top: 1em;
-}
-
-.checkicon {
-    width: 1.6em;
-    height: 1.5em;
-    margin-left: 75%;
-    position: fixed;
-    margin-top: 1em;
-    transition: transform .2s;
-}
-
-header ul li a .active {
-    transform: scale(1.5);
-}
-
-.historyicon {
-    width: 1.6em;
-    height: 1.5em;
-    margin-left: 85%;
-    position: fixed;
-    margin-top: 1em;
-}
-
-#zoekbalk {
-    width: 6em;
-    height: 2em;
-    border-style: none;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    background-image: url(magnifying-glass.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 1.5em;
-    position: fixed;
-    margin-left: 70%;
-    font-size: 0.9em;
-    font-family: Frutiger LT Std;
-    margin-top: -2.4em;
-}
-
-#menuicon {
-    width: 2.5rem;
-    height: 2rem;
-    margin-top: 0.7rem;
-    cursor: pointer;
-    margin-left: 2.6em;
-}
-
-
-/*FILTER SYSTEEM------------------------------------------------------------------------*/
-
-.filter {
-    margin-top: 2.3em;
-    margin-left: 1%;
-    margin-right: 1%;
-    background-color: #ffc917;
-    width: 97%;
-    height: 16%;
-    font-size: 1.8em;
-    position: fixed;
-    z-index: 10;
-    display: none;
-    visibility: hidden;
-}
-
-.checkboxesmenu {
-    font-family: Frutiger LT Std;
-    color: #000382;
-    border: solid #000382 0.05em;
-    margin-top: 0.6em;
-    display: block;
-}
-
-label {
-    display: block;
-}
-
-.checkboxesmenu2,
-.checkboxesmenu3,
-.checkboxesmenu4 {
-    font-family: Frutiger LT Std;
-    color: #000382;
-    border: solid #000383 0.05em;
-    margin-bottom: 0.6em;
-    margin-top: 0.6em;
-}
-
-select {
-    margin-top: 2em;
-    margin-bottom: 0.3em;
-    width: 22%;
-    height: 40%;
-    margin-left: 1.7%;
-    font-family: Frutiger LT Std;
-    font-size: 55%;
-    color: #000382;
-}
-
-
-/*BANNERFOTO-----------------------------------------------------------------------*/
-
-.bannerfoto {
-    margin-top: 3em;
-    width: 96%;
-    height: 12em;
-    margin-left: 0.8em;
-}
-
-
-/*LOGIN-----------------------------------------------------------------------------*/
-
-.Logintitle {
-    font-size: 2em;
-    margin-top: 1.5em;
-    font-family: Frutiger LT Std;
-    color: #000382;
-    margin-top: -2%;
-}
-
-fieldset {
-    border-style: none;
-}
-
-.inloggen {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: 60%;
-    background-color: #ffc917;
-    display: flex;
-    flex-direction: column;
-    /*    transition: all .5s;*/
-    padding: 3em;
-    color: #000382;
-    font-family: Frutiger LT Std;
-    margin-top: 0.5em;
-}
-
-.inloggen a {
-    margin-top: 0.2em;
-    color: #ffffff;
-    text-decoration: underline;
-    margin-left: 0.1em;
-}
-
-.linkregisteren {
-    margin-top: 0.4em;
-    font-size: 0.9em;
-    text-decoration: none;
-    margin-left: 0.1em;
-}
-
-legend {
-    margin-left: 0.4em;
-    margin-bottom: 0.2em;
-}
-
-.inloggen label {
-    /*    display: block;*/
-    font-family: Frutiger LT Std;
-    width: 100%;
-}
-
-.inloggen button {
-    width: 8em;
-    height: 3em;
-    margin-left: 2em;
-    margin-top: 0.6em;
-    font-size: 1.1em;
-    background-color: #0079d3;
-    font-family: Frutiger LT Std;
-    color: #ffffff;
-}
-
-.inloggen button:hover {
-    background-color: #005ca0;
-}
-
-input:invalid {
-    background-color: white;
-}
-
-#password:valid {
-    background-color: lightgreen;
-    padding: 0.4em;
-}
-
-.inloggen input[type=text] {
-    margin-top: 0.2em;
-    margin-bottom: 0.6em;
-    width: 100%;
-    height: 3em;
-    font-size: inherit;
-}
-
-.inloggen input[type=password] {
-    margin-top: 0.2em;
-    margin-bottom: 0.6em;
-    width: 100%;
-    height: 3em;
-    font-size: inherit;
-    padding: 0.4em;
-}
-
-.inloggen input[type=email] {
-    margin-top: 0.4em;
-    width: 100%;
-    height: 3em;
-    font-size: inherit;
-    padding: 0.4em;
-}
-
-form {
-    background-color: #FFFFFF;
-    font-size: 1em;
-    height: 3.5em;
-}
-
-
-/*REGISTREREN-----------------------------------------------------------------------------*/
-
-.aanmelden {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: 80%;
-    background-color: #ffc917;
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-    color: #000382;
-    font-family: Frutiger LT Std;
-    margin-top: 0.5em;
-}
-
-.aanmelden a {
-    display: block;
-    margin-top: 0.2em;
-    margin-left: -2%;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.aanmelden label {
-    display: block;
-    font-family: Frutiger LT Std;
-    margin-top: 0%;
-    margin-left: -2%;
-    width: 100%
-}
-
-.aanmelden button {
-    padding: 1em;
-    width: 10em;
-    margin-left: -2%;
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
-    font-size: 0.9em;
-    background-color: #0079d3;
-    font-family: Frutiger LT Std;
-    color: #ffffff;
-}
-
-.aanmelden button:hover {
-    background-color: #005ca0;
-}
-
-input:invalid {
-    background-color: white;
-    padding: 0.4em;
-}
-
-#password:valid {
-    background-color: lightgreen;
-    padding: 0.4em;
-}
-
-.aanmelden input[type=text] {
-    margin-top: 0.2em;
-    width: 100%;
-    height: 2em;
-    font-size: inherit;
-    margin-left: -2%;
-    margin-bottom: 0.6em;
-}
-
-.aanmelden input[type=password] {
-    margin-top: 0.2em;
-    width: 100%;
-    height: 2em;
-    font-size: inherit;
-    margin-left: -2%;
-    margin-bottom: 0.6em;
-}
-
-.aanmelden input[type=email] {
-    margin-top: 0.2em;
-    width: 100%;
-    height: 2em;
-    font-size: inherit;
-    margin-left: -2%;
-    margin-bottom: 0.6em;
-}
-
-::-webkit-input-placeholder {
-    display: block;
-    padding-left: 0.5em;
-}
-
-
-/*main------------------------------------------------------------------------------------*/
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin-top: 7.5em;
-}
-
-a {
-    text-decoration: none;
-}
-
-main {
-    display: flex;
-    /*justify-content: space-around;*/
-    flex-wrap: wrap;
-    margin-right: -1.5rem;
-    overflow: hidden;
-    max-width: 100vw;
-}
-
-main {
-    padding: 1rem 1em 1em;
-}
-
-body {
-    background-color: #e6e6e9;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-
-/*VERHALEN----------------------------------------------------------------------------*/
-
-.imgzoon {
-    width: 90%;
-    height: 90%;
-    margin-left: 5%;
-    margin-top: -5%;
-}
-
-.imgrecept {
-    width: 90%;
-    height: 90%;
-    margin-left: 5%;
-    margin-top: -5%;
-}
-
-.imgberoemd {
-    width: 90%;
-    height: 90%;
-    margin-left: 5%;
-    margin-top: -5%;
-}
-
-article {
-    background-color: white;
-    width: 25rem;
-    min-height: 15rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    flex-grow: 1;
-    flex-shrink: 1;
-    position: relative;
-}
-
-article:nth-child(1) {
-    background-color: #ffc917;
-}
-
-h3 {
-    font-family: Frutiger Bold;
-    /*margin: 1.7em;*/
-    color: #000382;
-    font-size: 1.2em;
-    margin-bottom: 1.4rem;
-}
-
-
-/*op tablet en mobiel veranderd img in icon*/
-
-.icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 7%;
-}
-
-.imgartikel {
-    width: 100%;
-    margin-bottom: 0.4rem;
-}
-
-p {
-    font-family: Frutiger LT Std;
-    font-size: 0.8em;
-    color: darkslategrey;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.01em;
-    line-height: normal;
-}
-
-.bannerverhaal {
-    margin-top: 3em;
-}
-
-footer img {
-    width: 2rem;
-    height: 2rem;
-}
-
-button {
-    background: #000382;
-    cursor: pointer;
-    text-align: center;
-    transition-property: background;
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    color: white;
-    font-family: Frutiger LT Std;
-    float: right;
-    width: 6rem;
-    height: 2.5rem;
-    font-size: 0.9em;
-}
-
-button:hover {
-    background: #ffc917;
-    color: #000382;
-}
-
-.checkiconstil {
-    cursor: pointer;
-    margin-right: 1em;
-    margin-left: 0.4em;
-    width: 1.5em;
-    height: 1.5em;
-    transition: transform .2s;
-}
-
-.active {
-    transform: scale(1.5);
-}
-
-.commenticonstil {
-    cursor: pointer;
-    text-decoration: none;
-    margin-bottom: -0.1em;
-    width: 1.5em;
-    height: 1.5em;
-}
-
-
-/*PAGINA MET GEFILTERDE VERHALEN---------------------------------------------*/
-
-h2 {
-    font-family: Frutiger LT Std;
-    margin-bottom: 0.6em;
-    font-size: 1.2em;
-}
-
-h4 {
-    font-family: Frutiger LT Std;
-    margin-top: -0.6em;
-    margin-bottom: 0.4em;
-}
-
-
-/*MEDIA QUERIES --------------------------------------------------------------*/
-
-@media screen and (min-width:42em) {
-    .header2 {
-        visibility: hidden;
-        display: none;
-    }
-}
-
-@media screen and (max-width:42em) {
-    h1 {
-        visibility: hidden;
-        display: none;
-    }
-    .titelsmall {
-        visibility: visible;
-        display: block;
-    }
-}
-
-@media screen and (min-width:42em) {
-    .titelsmall {
-        visibility: hidden;
-        display: none;
-    }
-    h1 {
-        visibility: visible;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 55em) {
-    .imgartikel {
-        visibility: hidden;
-        display: none;
-    }
-}
-
-@media screen and (min-width: 55em) {
-    .icon {
-        display: none;
-    }
-    .imgartikel {
-        visibility: visible;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .bannerfoto {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .profiel {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 42em) {
-    .filter {
-        display: block;
-        visibility: visible;
-    }
-}
-
-@media screen and (max-width: 42em) {
-    h3 {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 42em) {
-    .icon {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 9%;
-        margin-right: 0.6em;
-        margin-top: 0.6em;
-    }
-}
-
-.checkboxesmenu:not(.open-checkbox) {
-    display: none;
-    visibility: hidden;
-}
-
-.checkboxesmenu2:not(.open-checkbox) {
-    display: none;
-    visibility: hidden;
-}
-
-.checkboxesmenu3:not(.open-checkbox) {
-    display: none;
-    visibility: hidden;
-}
-
-.checkboxesmenu4:not(.open-checkbox) {
-    display: none;
-    visibility: hidden;
-}
-
-@media screen and (min-width: 42em) {
-    .checkboxesmenu,
-    .checkboxesmenu2,
-    .checkboxesmenu3,
-    .checkboxesmenu4 {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-@media screen and (min-width: 42em) {}
-
-@media screen and (max-width: 45em) {
-    main {}
-}
-
-
-/*
-# Phone only screen and (max-width:20em) # Tablet only screen and (min-width:60em) and (max-width:100em) # Desktop only screen and (min-width:80em)*/
+            @font-face {
+                font-family: Frutiger LT Std;
+                src: url("../fonts/f7e7b4af2b8b6a622ffc59f70392ee04.otf") format("opentype");
+            }
+            
+            @font-face {
+                font-family: Frutiger Bold;
+                src: url("../fonts/frutiger-lt-std-65-bold-58760dbe993b9.otf") format("opentype");
+            }
+            /*HEADERS------------------------------------------------------------------------------*/
+            
+            h1 {
+                color: #000382;
+                font-size: 120%;
+                font-family: Frutiger LT Std;
+                position: fixed;
+                margin-top: 1em;
+                margin-left: 30%;
+            }
+            
+            .titelsmall {
+                color: #000382;
+                font-size: 120%;
+                font-family: Frutiger LT Std;
+                position: fixed;
+                margin-top: 1em;
+                width: 20em;
+                margin-left: 30%;
+                height: 6em;
+            }
+            
+            header {
+                box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
+                background: #fff;
+                left: 0;
+                min-height: 3.75rem;
+                min-width: 320px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 520;
+            }
+            
+            body > header:nth-of-type(2) {
+                margin-top: 3.4em;
+                border-top: 1px solid #000382;
+            }
+            /*HEADER ICONS EN LOGOS----------------------------------------------------------------------------------------------*/
+            
+            .ns-logo {
+                margin-top: -0.6em;
+                position: fixed;
+                height: 5em;
+                width: 8em;
+            }
+            
+            .profileicon {
+                width: 1.5em;
+                height: 1.4em;
+                margin-left: 65%;
+                position: fixed;
+                margin-top: 1em;
+            }
+            
+            .checkicon {
+                width: 1.6em;
+                height: 1.5em;
+                margin-left: 75%;
+                position: fixed;
+                margin-top: 1em;
+                transition: transform .2s;
+            }
+            
+            header ul li a .active {
+                transform: scale(1.5);
+            }
+            
+            .historyicon {
+                width: 1.6em;
+                height: 1.5em;
+                margin-left: 85%;
+                position: fixed;
+                margin-top: 1em;
+            }
+            
+            #zoekbalk {
+                width: 6em;
+                height: 2em;
+                border-style: none;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                background-image: url(magnifying-glass.png);
+                background-repeat: no-repeat;
+                background-position: left;
+                background-size: 1.5em;
+                position: fixed;
+                margin-left: 70%;
+                font-size: 0.9em;
+                font-family: Frutiger LT Std;
+                margin-top: -2.4em;
+            }
+            
+            #menuicon {
+                width: 2.5rem;
+                height: 2rem;
+                margin-top: 0.7rem;
+                cursor: pointer;
+                margin-left: 2.6em;
+            }
+            /*FILTER SYSTEEM------------------------------------------------------------------------*/
+            
+            .filter {
+                margin-top: 2.3em;
+                margin-left: 1%;
+                margin-right: 1%;
+                background-color: #ffc917;
+                width: 97%;
+                height: 16%;
+                font-size: 1.8em;
+                position: fixed;
+                z-index: 10;
+                display: none;
+                visibility: hidden;
+            }
+            
+            .checkboxesmenu {
+                font-family: Frutiger LT Std;
+                color: #000382;
+                border: solid #000382 0.05em;
+                margin-top: 0.6em;
+                display: block;
+                transition-timing-function: ease-in;
+            }
+            /*
+.checkboxesmenu .menuactive {
+    transform: skewX(25deg);
+    transform: skewY(25deg);
+}
+*/
+            
+            label {
+                display: block;
+            }
+            
+            .checkboxesmenu2,
+            .checkboxesmenu3,
+            .checkboxesmenu4 {
+                font-family: Frutiger LT Std;
+                color: #000382;
+                border: solid #000383 0.05em;
+                margin-bottom: 0.6em;
+                margin-top: 0.6em;
+            }
+            
+            select {
+                margin-top: 2em;
+                margin-bottom: 0.3em;
+                width: 22%;
+                height: 40%;
+                margin-left: 1.7%;
+                font-family: Frutiger LT Std;
+                font-size: 55%;
+                color: #000382;
+            }
+            /*BANNERFOTO-----------------------------------------------------------------------*/
+            
+            .bannerfoto {
+                margin-top: 3em;
+                width: 96%;
+                height: 12em;
+                margin-left: 0.8em;
+            }
+            /*LOGIN-----------------------------------------------------------------------------*/
+            
+            .Logintitle {
+                font-size: 2em;
+                margin-top: 1.5em;
+                font-family: Frutiger LT Std;
+                color: #000382;
+                margin-top: -2%;
+            }
+            
+            fieldset {
+                border-style: none;
+            }
+            
+            .inloggen {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+                height: 60%;
+                background-color: #ffc917;
+                display: flex;
+                flex-direction: column;
+                /*    transition: all .5s;*/
+                padding: 3em;
+                color: #000382;
+                font-family: Frutiger LT Std;
+                margin-top: 0.5em;
+            }
+            
+            .inloggen a {
+                margin-top: 0.2em;
+                color: #ffffff;
+                text-decoration: underline;
+                margin-left: 0.1em;
+            }
+            
+            .linkregisteren {
+                margin-top: 0.4em;
+                font-size: 0.9em;
+                text-decoration: none;
+                margin-left: 0.1em;
+            }
+            
+            legend {
+                margin-left: 0.4em;
+                margin-bottom: 0.2em;
+            }
+            
+            .inloggen label {
+                /*    display: block;*/
+                font-family: Frutiger LT Std;
+                width: 100%;
+            }
+            
+            .inloggen button {
+                width: 8em;
+                height: 3em;
+                margin-left: 2em;
+                margin-top: 0.6em;
+                font-size: 1.1em;
+                background-color: #0079d3;
+                font-family: Frutiger LT Std;
+                color: #ffffff;
+            }
+            
+            .inloggen button:hover {
+                background-color: #005ca0;
+            }
+            
+            input:invalid {
+                background-color: white;
+            }
+            
+            #password:valid {
+                background-color: lightgreen;
+                padding: 0.4em;
+            }
+            
+            .inloggen input[type=text] {
+                margin-top: 0.2em;
+                margin-bottom: 0.6em;
+                width: 100%;
+                height: 3em;
+                font-size: inherit;
+            }
+            
+            .inloggen input[type=password] {
+                margin-top: 0.2em;
+                margin-bottom: 0.6em;
+                width: 100%;
+                height: 3em;
+                font-size: inherit;
+                padding: 0.4em;
+            }
+            
+            .inloggen input[type=email] {
+                margin-top: 0.4em;
+                width: 100%;
+                height: 3em;
+                font-size: inherit;
+                padding: 0.4em;
+            }
+            
+            form {
+                background-color: #FFFFFF;
+                font-size: 1em;
+                height: 3.5em;
+            }
+            /*REGISTREREN-----------------------------------------------------------------------------*/
+            
+            .aanmelden {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 100%;
+                height: 80%;
+                background-color: #ffc917;
+                display: flex;
+                flex-direction: column;
+                padding: 3em;
+                color: #000382;
+                font-family: Frutiger LT Std;
+                margin-top: 0.5em;
+            }
+            
+            .aanmelden a {
+                display: block;
+                margin-top: 0.2em;
+                margin-left: -2%;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            
+            .aanmelden label {
+                display: block;
+                font-family: Frutiger LT Std;
+                margin-top: 0%;
+                margin-left: -2%;
+                width: 100%
+            }
+            
+            .aanmelden button {
+                padding: 1em;
+                width: 10em;
+                margin-left: -2%;
+                margin-bottom: 0.5em;
+                margin-top: 1.5em;
+                font-size: 0.9em;
+                background-color: #0079d3;
+                font-family: Frutiger LT Std;
+                color: #ffffff;
+            }
+            
+            .aanmelden button:hover {
+                background-color: #005ca0;
+            }
+            
+            input:invalid {
+                background-color: white;
+                padding: 0.4em;
+            }
+            
+            #password:valid {
+                background-color: lightgreen;
+                padding: 0.4em;
+            }
+            
+            .aanmelden input[type=text] {
+                margin-top: 0.2em;
+                width: 100%;
+                height: 2em;
+                font-size: inherit;
+                margin-left: -2%;
+                margin-bottom: 0.6em;
+            }
+            
+            .aanmelden input[type=password] {
+                margin-top: 0.2em;
+                width: 100%;
+                height: 2em;
+                font-size: inherit;
+                margin-left: -2%;
+                margin-bottom: 0.6em;
+            }
+            
+            .aanmelden input[type=email] {
+                margin-top: 0.2em;
+                width: 100%;
+                height: 2em;
+                font-size: inherit;
+                margin-left: -2%;
+                margin-bottom: 0.6em;
+            }
+            
+            ::-webkit-input-placeholder {
+                display: block;
+                padding-left: 0.5em;
+            }
+            /*main------------------------------------------------------------------------------------*/
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                margin-top: 7.5em;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            main {
+                display: flex;
+                /*justify-content: space-around;*/
+                flex-wrap: wrap;
+                margin-right: -1.5rem;
+                overflow: hidden;
+                max-width: 100vw;
+            }
+            
+            main {
+                padding: 1rem 1em 1em;
+            }
+            
+            body {
+                background-color: #e6e6e9;
+                width: 100vw;
+                overflow-x: hidden;
+            }
+            /*VERHALEN----------------------------------------------------------------------------*/
+            
+            .imgzoon {
+                width: 90%;
+                height: 90%;
+                margin-left: 5%;
+                margin-top: -5%;
+            }
+            
+            .imgrecept {
+                width: 90%;
+                height: 90%;
+                margin-left: 5%;
+                margin-top: -5%;
+            }
+            
+            .imgberoemd {
+                width: 90%;
+                height: 90%;
+                margin-left: 5%;
+                margin-top: -5%;
+            }
+            
+            article {
+                background-color: white;
+                width: 25rem;
+                min-height: 15rem;
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
+                padding: 1rem;
+                flex-grow: 1;
+                flex-shrink: 1;
+                position: relative;
+            }
+            
+            article:nth-child(1) {
+                background-color: #ffc917;
+            }
+            
+            h3 {
+                font-family: Frutiger Bold;
+                /*margin: 1.7em;*/
+                color: #000382;
+                font-size: 1.2em;
+                margin-bottom: 1.4rem;
+            }
+            /*op tablet en mobiel veranderd img in icon*/
+            
+            .icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 7%;
+                animation: icon 4s infinite;
+                animation-direction: alternate;
+            }
+            
+            .imgartikel {
+                width: 100%;
+                margin-bottom: 0.4rem;
+            }
+            
+            p {
+                font-family: Frutiger LT Std;
+                font-size: 0.8em;
+                color: darkslategrey;
+                margin-bottom: 0.8rem;
+                letter-spacing: 0.01em;
+                line-height: normal;
+            }
+            
+            .bannerverhaal {
+                margin-top: 3em;
+            }
+            
+            footer img {
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            button {
+                background: #000382;
+                cursor: pointer;
+                text-align: center;
+                transition-property: background;
+                transition-duration: 1s;
+                transition-timing-function: linear;
+                color: white;
+                font-family: Frutiger LT Std;
+                float: right;
+                width: 6rem;
+                height: 2.5rem;
+                font-size: 0.9em;
+                animation: shimmy 4s infinite;
+                animation-direction: alternate;
+            }
+            
+            button:hover {
+                background: #ffc917;
+                color: #000382;
+            }
+            
+            .checkiconstil {
+                cursor: pointer;
+                margin-right: 1em;
+                margin-left: 0.4em;
+                width: 1.5em;
+                height: 1.5em;
+                transition: transform .2s;
+            }
+            
+            .active {
+                transform: scale(1.5);
+            }
+            
+            .commenticonstil {
+                cursor: pointer;
+                text-decoration: none;
+                margin-bottom: -0.1em;
+                width: 1.5em;
+                height: 1.5em;
+            }
+            /*PAGINA MET GEFILTERDE VERHALEN---------------------------------------------*/
+            
+            h2 {
+                font-family: Frutiger LT Std;
+                margin-bottom: 0.6em;
+                font-size: 1.2em;
+            }
+            
+            h4 {
+                font-family: Frutiger LT Std;
+                margin-top: -0.6em;
+                margin-bottom: 0.4em;
+            }
+            /*MEDIA QUERIES --------------------------------------------------------------*/
+            
+            @keyframes shimmy {
+                0% {
+                    transform: translate(0, 0);
+                }
+                100% {
+                    background-color: #ffc917;
+                }
+            }
+            
+            @keyframes icon {
+                0% {
+                    transform: scale(1.2);
+                }
+            }
+            
+            @media screen and (min-width:42em) {
+                .header2 {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width:42em) {
+                h1 {
+                    visibility: hidden;
+                    display: none;
+                }
+                .titelsmall {
+                    visibility: visible;
+                    display: block;
+                }
+            }
+            
+            @media screen and (max-width:21.5em) {
+                .titelsmall {
+                    font-size: 1em;
+                }
+            }
+            
+            @media screen and (max-width:21.5em) {
+                #menuicon {
+                    margin-left: 1.5em;
+                }
+            }
+            
+            @media screen and (max-width:21.5em) {
+                .ns-logo {
+                    margin-left: -1em;
+                }
+            }
+            
+            @media screen and (min-width: 42em) {
+                .titelsmall {
+                    visibility: hidden;
+                    display: none;
+                }
+                h1 {
+                    visibility: visible;
+                    display: block;
+                }
+            }
+            
+            @media screen and (max-width: 55em) {
+                .imgartikel {
+                    visibility: hidden;
+                    display: none;
+                }
+            }
+            
+            @media screen and (min-width: 55em) {
+                .icon {
+                    display: none;
+                }
+                .imgartikel {
+                    visibility: visible;
+                    display: block;
+                }
+            }
+            
+            @media screen and (max-width: 42em) {
+                .bannerfoto {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 42em) {
+                .profiel {
+                    display: none;
+                }
+            }
+            
+            @media screen and (min-width: 42em) {
+                .filter {
+                    display: block;
+                    visibility: visible;
+                }
+            }
+            
+            @media screen and (max-width: 42em) {
+                h3 {
+                    font-size: 0.9em;
+                }
+            }
+            
+            @media screen and (max-width: 42em) {
+                .icon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 9%;
+                    margin-right: 0.6em;
+                    margin-top: 0.6em;
+                }
+            }
+            
+            .checkboxesmenu:not(.open-checkbox) {
+                display: none;
+                visibility: hidden;
+            }
+            
+            .checkboxesmenu2:not(.open-checkbox) {
+                display: none;
+                visibility: hidden;
+            }
+            
+            .checkboxesmenu3:not(.open-checkbox) {
+                display: none;
+                visibility: hidden;
+            }
+            
+            .checkboxesmenu4:not(.open-checkbox) {
+                display: none;
+                visibility: hidden;
+            }
+            
+            @media screen and (min-width: 42em) {
+                .checkboxesmenu,
+                .checkboxesmenu2,
+                .checkboxesmenu3,
+                .checkboxesmenu4 {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+            /* # Phone only screen and (max-width:20em) # Tablet only screen and (min-width:60em) and (max-width:100em) # Desktop only screen and (min-width:80em) */

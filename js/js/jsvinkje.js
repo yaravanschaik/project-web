@@ -12,9 +12,7 @@ function zichtbareVinkje() {
 
     setTimeout(function () {
         checkicon.classList.remove('active');
-    }, 2000);
-
-
+    }, 200);
 
     console.log("zichtbaar");
     if (!vinkjeStatus) {
