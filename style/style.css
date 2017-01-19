@@ -316,8 +316,6 @@ form {
 }
 
 .aanmelden button {
-    padding: 1em;
-    width: 10em;
     margin-left: -2%;
     margin-bottom: 0.5em;
     margin-top: 1.5em;
@@ -511,7 +509,6 @@ button {
     color: white;
     font-family: Frutiger LT Std;
     float: right;
-    width: 6rem;
     height: 2.5rem;
     font-size: 0.9em;
     animation: shimmy 4s infinite;
@@ -557,6 +554,7 @@ h4 {
     font-family: Frutiger LT Std;
     margin-top: -0.6em;
     margin-bottom: 0.4em;
+    font-size: 0.6em;
 }
 
 
@@ -600,7 +598,8 @@ h4 {
 
 @media screen and (max-width:21.5em) {
     .titelsmall {
-        font-size: 1em;
+        font-size: 1.5em;
+        margin-left: 2.4em;
     }
 }
 
