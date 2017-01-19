@@ -33,6 +33,17 @@ h1 {
     height: 6em;
 }
 
+.titelsmall2 {
+    color: #000382;
+    font-size: 120%;
+    font-family: Frutiger LT Std;
+    position: fixed;
+    margin-top: 1em;
+    width: 20em;
+    margin-left: 30%;
+    height: 6em;
+}
+
 header {
     box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
     background: #fff;
@@ -594,12 +605,25 @@ h4 {
         visibility: visible;
         display: block;
     }
+    .titelsmall2 {
+        visibility: visible;
+        display: block;
+    }
 }
 
 @media screen and (max-width:21.5em) {
     .titelsmall {
         font-size: 1.5em;
         margin-left: 2.4em;
+        margin-top: 0.7em;
+    }
+}
+
+@media screen and (max-width:21.5em) {
+    .titelsmall2 {
+        font-size: 1em;
+        margin-left: 5em;
+        margin-top: 1.5em;
     }
 }
 
@@ -617,6 +641,10 @@ h4 {
 
 @media screen and (min-width: 42em) {
     .titelsmall {
+        visibility: hidden;
+        display: none;
+    }
+    .titelsmall2 {
         visibility: hidden;
         display: none;
     }
