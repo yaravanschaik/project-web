@@ -13,108 +13,120 @@
 
 <body>
     <header>
-        <a href="verhaalzoon.html"><img class="ns-logo" src="img/ns%20logo.png" alt="NS-logo"></a>
-        <ul>
-            <li>
+        <section>
+            <a href="verhaalzoon.html"><img class="ns-logo" src="img/ns%20logo.png" alt="NS-logo"></a>
+            <ul>
+                <li>
 
-                <a href="inloggenn.html"><img class="profileicon" src="img/avatar.png" alt="profiel"></a>
-                <a href="opgeslagen.html">
-                    <img class="checkicon" src="img/check-mark.png" alt="checkicon"> </a>
-                <a href="history.html">
-                    <img class="historyicon" src="img/history.png" alt="historyicon"> </a>
-            </li>
-        </ul>
+                    <a href="inloggenn.html"><img class="profileicon" src="img/avatar.png" alt="profiel"></a>
+                    <a href="opgeslagen.html">
+                        <img class="checkicon" src="img/check-mark.png" alt="checkicon"> </a>
+                    <a href="history.html">
+                        <img class="historyicon" src="img/history.png" alt="historyicon"> </a>
+                </li>
+            </ul>
 
-        <a href="verhaalzoon.html"><h1> 99 Verhalen voor onderweg</h1></a>
-        <!--        <input id="zoekbalk" type="text" name="search" placeholder="       Zoeken">-->
-        <form class="filter">
-            <select name="aantal woorden">
-                <option>aantal woorden</option>
-                <option>0-500 woorden(0-2 minuten)</option>
-                <option>501-1000 woorden(2-4 minuten)</option>
-                <option>1001-1500 woorden(4-6 minuten)</option>
-                <option>1500+ woorden(6+ minuten)</option>
-            </select>
-            <select name="aantal lezers">
-                <option>aantal lezers</option>
-                <option>1000+ lezers</option>
-                <option>501 - 1000 lezers</option>
-                <option>101 - 500 lezers</option>
-                <option>0 - 100 lezers</option>
-            </select>
-            <select name="genre">
-                <option>genre</option>
-                <option>humor</option>
-                <option>fantasie</option>
-                <option>fictie</option>
-                <option>horror</option>
-            </select>
-            <select name="publicatie datum">
-                <option>publicatie datum</option>
-                <option>vandaag</option>
-                <option>deze week</option>
-                <option>meer dan 1 week geleden</option>
-                <option>meer dan 1 maand geleden</option>
-            </select>
-        </form>
-    </header>
+            <a href="verhaalzoon.html"><h1> 99 Verhalen voor onderweg</h1></a>
+            <form class="filter">
+                <select name="aantal woorden">
+                    <option>aantal woorden</option>
+                    <option>0-500 woorden (0-2 minuten)</option>
+                    <option>501-1000 woorden (2-4 minuten)</option>
+                    <option>1001-1500 woorden (4-6 minuten)</option>
+                    <option>1500+ woorden (6+ minuten)</option>
+                </select>
+                <select name="aantal lezers">
+                    <option>aantal lezers</option>
+                    <option>1000+ lezers</option>
+                    <option>501 - 1000 lezers</option>
+                    <option>101 - 500 lezers</option>
+                    <option>0 - 100 lezers</option>
+                </select>
+                <select name="genre">
+                    <option>genre</option>
+                    <option>humor</option>
+                    <option>fantasie</option>
+                    <option>fictie</option>
+                    <option>horror</option>
+                </select>
+                <select name="publicatie datum">
+                    <option>publicatie datum</option>
+                    <option>vandaag</option>
+                    <option>deze week</option>
+                    <option>meer dan 1 week geleden</option>
+                    <option>meer dan 1 maand geleden</option>
+                </select>
+            </form>
+        </section>
 
-    <header class="header2">
-        <a href="verhaalzoon.html">
-            <h1 class="titelsmall2"> 99 Verhalen voor onderweg</h1></a>
-        <img id="menuicon" src="img/menuicon.png" alt="menuicon">
 
-        <fieldset class="checkboxesmenu">
-            <legend>aantal woorden</legend>
-            <label>
-                <input type="checkbox"> 0 - 500 woorden (0-2 minuten) </label>
-            <label>
-                <input type="checkbox"> 501 - 1000 woorden (2-4 minuten) </label>
-            <label>
-                <input type="checkbox"> 1001 - 1500 woorden (4-6 minuten) </label>
-            <label>
-                <input type="checkbox"> 1500+ woorden (6+ minuten)
-            </label>
-        </fieldset>
+        <section>
+            <a href="verhaalzoon.html">
+                <h1 class="titelsmall2"> 99 Verhalen voor onderweg</h1></a>
 
-        <fieldset class="checkboxesmenu2">
-            <legend>aantal lezers</legend>
-            <label>
-                <input type="checkbox"> 1000+ lezers </label>
-            <label>
-                <input type="checkbox"> 501 - 1000 lezers </label>
-            <label>
-                <input type="checkbox"> 101 - 500 lezers </label>
-            <label>
-                <input type="checkbox"> 0 - 100 lezers </label>
+            <div class="hamburger">
+                <input type="checkbox" id="hamburger" />
+                <label for="hamburger" class="lines">
+                    <div class="line diagonal part-1"></div>
+                    <div class="line horizontal"></div>
+                    <div class="line diagonal part-2"></div>
+                </label>
+            </div>
+            <!--            <img id="menuicon" src="img/menuicon.png" alt="menuicon">-->
 
-        </fieldset>
+            <fieldset class="checkboxesmenu">
+                <legend>aantal woorden</legend>
+                <label>
+                    <input type="checkbox"> 0 - 500 woorden (0-2 minuten) </label>
+                <label>
+                    <input type="checkbox"> 501 - 1000 woorden (2-4 minuten) </label>
+                <label>
+                    <input type="checkbox"> 1001 - 1500 woorden (4-6 minuten) </label>
+                <label>
+                    <input type="checkbox"> 1500+ woorden (6+ minuten)
+                </label>
+            </fieldset>
 
-        <fieldset class="checkboxesmenu3">
-            <legend>genre</legend>
-            <label>
-                <input type="checkbox"> humor </label>
-            <label>
-                <input type="checkbox"> fantasie </label>
-            <label>
-                <input type="checkbox"> fictie </label>
-            <label>
-                <input type="checkbox"> horror </label>
+            <fieldset class="checkboxesmenu2">
+                <legend>aantal lezers</legend>
+                <label>
+                    <input type="checkbox"> 1000+ lezers </label>
+                <label>
+                    <input type="checkbox"> 501 - 1000 lezers </label>
+                <label>
+                    <input type="checkbox"> 101 - 500 lezers </label>
+                <label>
+                    <input type="checkbox"> 0 - 100 lezers </label>
 
-        </fieldset>
-        <fieldset class="checkboxesmenu4">
-            <legend>publicatie data</legend>
-            <label>
-                <input type="checkbox"> vandaag </label>
-            <label>
-                <input type="checkbox"> deze week </label>
-            <label>
-                <input type="checkbox"> langer dan 1 week geleden </label>
-            <label>
-                <input type="checkbox"> langer dan 1 maand geleden
-            </label>
-        </fieldset>
+            </fieldset>
 
+            <fieldset class="checkboxesmenu3">
+                <legend>genre</legend>
+                <label>
+                    <input type="checkbox"> humor </label>
+                <label>
+                    <input type="checkbox"> fantasie </label>
+                <label>
+                    <input type="checkbox"> fictie </label>
+                <label>
+                    <input type="checkbox"> horror </label>
+
+            </fieldset>
+            <!--
+            <fieldset class="checkboxesmenu4">
+    <legend>publicatie data</legend>
+    <label>
+        <input type="checkbox"> vandaag </label>
+    <label>
+        <input type="checkbox"> deze week </label>
+    <label>
+        <input type="checkbox"> langer dan 1 week geleden </label>
+    <label>
+        <input type="checkbox"> langer dan 1 maand geleden
+    </label>
+</fieldset>
+-->
+        </section>
     </header>
 
 
@@ -123,20 +135,22 @@
 
     <main>
 
+        <button id="scrollbutton">Klik om het introtekst over te slaan!</button>
+
         <article>
             <h3 id="introtitel">Lees 99 verhalen voor tijdens het reizen hier op deze website!</h3>
-            <p>Soms is reizen even een heerlijke ontspanning, terwijl het voor een ander als saai ervaren kan worden. We hebben 99 verhalen voor jullie samengesteld die makkelijk zijn voor onderweg. Dus zit u in de bus, trein, op de boot of in het vliegtuig? Geniet dan van onze verhalen!</p>
-            <p>Door middel van een handig filter systeem kunt u handig selecteren wat voor soort verhaal u wilt lezen! Wilt u een bepaalde genre lezen? Geen probleem! Wilt u graag een fictie lezen of een fantasie? Dan kunt u dat aangeven in het filter systeem en alle verhalen van het gekozen genre komen naar voren. Zo geldt dit ook voor de aantal lezers, aantal woorden en publicatie datum van een verhaal.</p>
+            <p>Soms is reizen even een heerlijke ontspanning, terwijl het voor een ander als saai ervaren kan worden. We hebben 99 verhalen voor jullie samengesteld die makkelijk zijn voor onderweg.</p>
+            <p>Door middel van een handig filter systeem kunt u handig selecteren wat voor soort verhaal u wilt lezen! Wilt u een bepaalde genre lezen? Geen probleem!</p>
             <p>Ook hebben we een functie toegevoegd die ervoor zorgt dat u van te voren verhalen kunt uitkiezen die u leuk lijken. U voegt ze toe aan de 'opgeslagen-lijst' met het vinkje-icon. Hierdoor kunt u in de 'opgeslagen-lijst' in één oogopslag de verhalen zien en lezen die u leuk lijken.</p>
             <p>Wilt u graag dat ene verhaal die u recentelijk gelezen heeft, aanraden aan iemand, maar u weet niet meer de titel van het verhaal? Dan hebben wij als laatste ook nog een 'geschiedenis-lijst'. Hier kunt u gemakkelijk de verhalen terug vinden die u allemaal heeft gelezen. </p>
             <p>Veel lees plezier namens de NS, Nurksmagazine en Yara van Schaik!</p>
 
         </article>
 
-        <article>
+        <article id="scrollarticle">
             <h3>Zoon - 24 juni 2011 by Molovich </h3>
             <a href="zoon.html"> <img class="imgartikel" src="img/0001.jpg"></a>
-            <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer […] </p>
+            <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer. Totdat ik me helemaal leeg gezogen voel. Ik kan niet meer. Ik begin op de speen te zuigen en binnen een paar […] </p>
 
 
             <img class="icon" src="img/baby.png">
@@ -146,7 +160,7 @@
             </a>
             <footer>
                 <img class="checkiconstil" src="img/check-mark.png" alt="checkicon">
-                <a onclick="scrollToTarget('#')"> <img class="commenticonstil" src="img/comment.png"></a>
+                <img class="commenticonstil" src="img/comment.png">
             </footer>
         </article>
 
@@ -161,7 +175,7 @@
             </a>
             <footer>
                 <img class="checkiconstil" src="img/check-mark.png" alt="checkicon">
-                <a onclick="scrollToTarget('#')"> <img class="commenticonstil" src="img/comment.png"></a>
+                <img class="commenticonstil" src="img/comment.png">
             </footer>
         </article>
 
@@ -169,7 +183,7 @@
 
             <h3>Blind - 3 juni 2011 by Molovich </h3>
             <img class="imgartikel" src="img/relaxed-page-001.jpg">
-            <p class="bannerverhaal"> Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drommen naar buiten. Voorzichtig vind ik mijn weg naar de uitgang en stap uit. Eigenlijk wilde ik mijn zoon meenemen, maar dat mocht niet van m’n vrouw. ‘Je bent blind, gek’, zei ze, ‘wat denk je nu, dat je de kinderwagen als blindegeleidehond kan gebruiken?’ Ik ben op zoek naar Stijloefeningen van Raymond Queneau in de vertaling van Rudy Kousbroek. Het liefst als luisterboek of […]</p>
+            <p class="bannerverhaal"> Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drommen naar buiten. Voorzichtig vind ik mijn weg naar de uitgang en stap uit. Eigenlijk wilde ik mijn zoon meenemen, maar dat mocht niet van m’n vrouw. ‘Je bent blind, gek’, zei ze, ‘wat denk je nu, dat je de kinderwagen als blindegeleidehond kan gebruiken?’ Ik ben op zoek naar Stijloefeningen van Raymond Queneau in de vertaling van Rudy Kousbroek. Het liefst als luisterboek of of in braille. Maar als dat er niet is, vind ik wel […]</p>
             <img class="icon" src="img/hide.png">
             <a href="blind.html">
                 <button>Lees meer... </button>
@@ -182,7 +196,7 @@
         <article>
             <h3>Zoon - 24 juni 2011 by Molovich </h3>
             <img class="imgartikel" src="img/0001.jpg">
-            <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer […] </p>
+            <p class="bannerverhaal"> Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum.Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo’n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. Ik gooi woedend m’n speen weg. Papa pakt de speen op, doet ‘m even in zijn eigen moment en stopt ‘m dan in mij. Ik haal de speen eruit en gooi hem weer woedend weg. Dat herhaalt zich een paar keer. Totdat ik me helemaal leeg gezogen voel. Ik kan niet meer. Ik begin op de speen te zuigen en binnen een paar […] </p>
             <img class="icon" src="img/baby.png">
             <a href="verhaal1.html">
                 <button>Lees meer... </button>
@@ -191,7 +205,6 @@
                 <img class="checkiconstil" src="img/check-mark.png" alt="checkicon">
                 <img class="commenticonstil" src="img/comment.png"></footer>
         </article>
-
 
 
         <article>
@@ -205,7 +218,7 @@
             </a>
             <footer>
                 <img class="checkiconstil" src="img/check-mark.png" alt="checkicon">
-                <a onclick="scrollToTarget('#')"> <img class="commenticonstil" src="img/comment.png"></a>
+                <img class="commenticonstil" src="img/comment.png">
             </footer>
         </article>
 
@@ -214,5 +227,6 @@
 </body>
 <script type="text/javascript" src="js/js/javascripts.js"></script>
 <script type="text/javascript" src="js/js/jsvinkje.js"></script>
+<script type="text/javascript" src="js/js/javascriptscroll.js"></script>
 
 </html>

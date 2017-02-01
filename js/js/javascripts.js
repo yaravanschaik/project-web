@@ -1,16 +1,16 @@
 // dropdown menu //
 
-var menuicon = document.getElementById("menuicon");
+var hamburger = document.getElementById("hamburger");
 var checkboxesMenu = document.getElementsByClassName("checkboxesmenu")[0];
 var checkboxesMenu2 = document.getElementsByClassName("checkboxesmenu2")[0];
 var checkboxesMenu3 = document.getElementsByClassName("checkboxesmenu3")[0];
 var checkboxesMenu4 = document.getElementsByClassName("checkboxesmenu4")[0];
 
 function zichtbareElement() {
-//    checkboxesMenu.classList.add("menuactive");
- //    checkboxesMenu2.classList.add("menuactive");
- //    checkboxesMenu3.classList.add("menuactive");
- //    checkboxesMenu4.classList.add("menuactive");
+    //    checkboxesMenu.classList.add("menuactive");
+    //    checkboxesMenu2.classList.add("menuactive");
+    //    checkboxesMenu3.classList.add("menuactive");
+    //    checkboxesMenu4.classList.add("menuactive");
     console.log("zichtbaar");
     checkboxesMenu.classList.toggle("open-checkbox");
     checkboxesMenu2.classList.toggle("open-checkbox");
@@ -21,4 +21,4 @@ function zichtbareElement() {
 
 
 
-menuicon.addEventListener('click', zichtbareElement);
+hamburger.addEventListener('click', zichtbareElement);

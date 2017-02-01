@@ -11,24 +11,68 @@
 </head>
 
 <body>
+
     <header>
-        <a href="verhaalzoon.html"><img class="ns-logo" src="img/ns%20logo.png" alt="NS-logo"></a>
+        <section>
+            <a href="verhaalzoon.html"><img class="ns-logo" src="img/ns%20logo.png" alt="NS-logo"></a>
+            <ul>
+                <li>
 
-        <ul>
-            <li>
-                <a href="inloggenn.html"><img class="profileicon" src="img/avatar.png" alt="profiel"></a>
-                <a class="checkicon" href=""><img class="checkicon" src="img/check-mark.png" alt="checkicon"> </a>
-                <a class="check" href="opgeslagen.html"><img class="checkicon" src="img/check-mark.png" alt="checkicon"> </a>
-                <a class="history" href="history.html"><img class="historyicon" src="img/history.png" alt="historyicon"> </a>
-            </li>
-        </ul>
+                    <a href="inloggenn.html"><img class="profileicon" src="img/avatar.png" alt="profiel"></a>
+                    <a href="opgeslagen.html">
+                        <img class="checkicon" src="img/check-mark.png" alt="checkicon"> </a>
+                    <a href="history.html">
+                        <img class="historyicon" src="img/history.png" alt="historyicon"> </a>
+                </li>
+            </ul>
 
-        <a href="verhaalzoon.html"><h1> opgeslagen verhalen</h1></a>
+            <a href="verhaalzoon.html"><h1> opgeslagen verhalen</h1></a>
+            <form class="filter">
+                <select name="aantal woorden">
+                    <option>aantal woorden</option>
+                    <option>0-500 woorden (0-2 minuten)</option>
+                    <option>501-1000 woorden (2-4 minuten)</option>
+                    <option>1001-1500 woorden (4-6 minuten)</option>
+                    <option>1500+ woorden (6+ minuten)</option>
+                </select>
+                <select name="aantal lezers">
+                    <option>aantal lezers</option>
+                    <option>1000+ lezers</option>
+                    <option>501 - 1000 lezers</option>
+                    <option>101 - 500 lezers</option>
+                    <option>0 - 100 lezers</option>
+                </select>
+                <select name="genre">
+                    <option>genre</option>
+                    <option>humor</option>
+                    <option>fantasie</option>
+                    <option>fictie</option>
+                    <option>horror</option>
+                </select>
+                <select name="publicatie datum">
+                    <option>publicatie datum</option>
+                    <option>vandaag</option>
+                    <option>deze week</option>
+                    <option>meer dan 1 week geleden</option>
+                    <option>meer dan 1 maand geleden</option>
+                </select>
+            </form>
+        </section>
 
-    </header>
 
-    <header class="header2">
-        <a href="verhaalzoon.html"><h1 class="titelsmall"> opgeslagen verhalen</h1></a>
+        <section>
+            <a href="verhaalzoon.html">
+                <h1 class="titelsmall2"> opgeslagen verhalen</h1></a>
+            <div class="hamburger">
+                <input type="checkbox" id="hamburger" />
+                <label for="hamburger" class="lines">
+                    <div class="line diagonal part-1"></div>
+                    <div class="line horizontal"></div>
+                    <div class="line diagonal part-2"></div>
+                </label>
+            </div>
+
+        </section>
     </header>
 
     <main>
@@ -45,7 +89,7 @@
             <footer>
                 <h4>3 januari 2017 opgeslagen</h4>
                 <img class="checkiconstil" src="img/checkmark.png" alt="checkicon">
-                <a onclick="scrollToTarget('#')"> <img class="commenticonstil" src="img/comment.png"></a>
+                <img class="commenticonstil" src="img/comment.png"></a>
             </footer>
 
         </article>
