@@ -372,13 +372,11 @@
                 
                 #scrollbutton {
                     background-color: #000382;
-                    width: 97%;
                     height: 2.5em;
-                    margin-bottom: 2%;
                     margin-left: 2%;
-                    margin-top: -4%;
                     border-style: none;
                     color: white;
+                    width: 100%;
                 }
                 /*VERHALEN----------------------------------------------------------------------------*/
                 
