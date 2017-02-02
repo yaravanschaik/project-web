@@ -1,4 +1,4 @@
-                /*CSS CODE VAN PROJECT WEB - 99 VERHALEN - YARA VAN SCHAIK - HIER ONDER STAAN MEDIA QUERIES, KEY FRAMES EN ALLE CSS*/
+                /*CSS CODE VAN PROJECT WEB - 99 VERHALEN - YARA VAN SCHAIK - HIER ONDER STAAT ALLE CSS, MEDIA QUERIES EN KEY FRAMES*/
                 
                 @font-face {
                     font-family: Frutiger LT Std;
@@ -92,23 +92,6 @@
                     margin-left: 85%;
                     position: fixed;
                     margin-top: 1em;
-                }
-                
-                #zoekbalk {
-                    width: 6em;
-                    height: 2em;
-                    border-style: none;
-                    -webkit-transition: width 0.4s ease-in-out;
-                    transition: width 0.4s ease-in-out;
-                    background-image: url(magnifying-glass.png);
-                    background-repeat: no-repeat;
-                    background-position: left;
-                    background-size: 1.5em;
-                    position: fixed;
-                    margin-left: 70%;
-                    font-size: 0.9em;
-                    font-family: Frutiger LT Std;
-                    margin-top: -2.4em;
                 }
                 /*FILTER SYSTEEM------------------------------------------------------------------------*/
                 
@@ -366,10 +349,6 @@
                     padding: 0;
                 }
                 
-                body {
-                    margin-top: 12em;
-                }
-                
                 a {
                     text-decoration: none;
                 }
@@ -388,6 +367,7 @@
                     background-color: #e6e6e9;
                     width: 100vw;
                     overflow-x: hidden;
+                    margin-top: 12em;
                 }
                 
                 #scrollbutton {
@@ -436,7 +416,6 @@
                 
                 article {
                     background-color: white;
-                    /*                    width: 25rem;*/
                     min-height: 15rem;
                     margin-bottom: 1.5rem;
                     margin-right: 0.4em;
@@ -447,20 +426,16 @@
                     flex-shrink: 1;
                     position: relative;
                 }
-                /*
-article:nth-child(1) {
-    background-color: #ffc917;
-}
-*/
                 
                 h3 {
                     font-family: Frutiger Bold;
                     color: #000382;
-                    font-size: 1.2em;
+                    font-size: 1.4em;
                     margin-bottom: 1.4rem;
-                    margin-left: 3%;
+                    margin-left: 10%;
+                    margin-bottom: 2%;
                 }
-                /*op tablet en mobiel veranderd img in icon*/
+                /*op tablet en mobiel veranderd img in icon---------------------------------------------------------------*/
                 
                 .icon {
                     position: absolute;
@@ -472,9 +447,9 @@ article:nth-child(1) {
                 }
                 
                 .imgartikel {
-                    width: 95%;
+                    width: 80%;
                     margin-bottom: 0.4rem;
-                    margin-left: 3%;
+                    margin-left: 10%;
                     margin-right: 3%;
                 }
                 
@@ -482,9 +457,9 @@ article:nth-child(1) {
                     font-family: Frutiger LT Std;
                     font-size: 0.8em;
                     color: darkslategrey;
-                    margin: 1.5em 4% 0.8rem 4%;
-                    letter-spacing: 0.06em;
-                    line-height: 1.6em;
+                    margin: 2em 10% 0.8rem 10%;
+                    letter-spacing: 0.08em;
+                    line-height: 1.8em;
                 }
                 
                 footer img {
@@ -506,7 +481,7 @@ article:nth-child(1) {
                     font-size: 0.9em;
                     animation: shimmy 4s infinite;
                     animation-direction: alternate;
-                    margin-right: 3%;
+                    margin-right: 12%;
                 }
                 
                 button:hover {
@@ -517,7 +492,7 @@ article:nth-child(1) {
                 .checkiconstil {
                     cursor: pointer;
                     margin-right: 1em;
-                    margin-left: 3%;
+                    margin-left: 10%;
                     width: 1.5em;
                     height: 1.5em;
                     transition: transform .2s;
@@ -533,21 +508,6 @@ article:nth-child(1) {
                     margin-bottom: -0.1em;
                     width: 1.5em;
                     height: 1.5em;
-                }
-                /*PAGINA MET GEFILTERDE VERHALEN---------------------------------------------*/
-                
-                h2 {
-                    font-family: Frutiger LT Std;
-                    margin-bottom: 0.6em;
-                    font-size: 1.2em;
-                }
-                
-                h4 {
-                    font-family: Frutiger LT Std;
-                    margin-top: -0.6em;
-                    margin-bottom: 0.4em;
-                    margin-left: 3%;
-                    font-size: 0.8em;
                 }
                 /*KEY FRAMES --------------------------------------------------------------*/
                 
@@ -565,7 +525,7 @@ article:nth-child(1) {
                         transform: scale(1.4);
                     }
                 }
-                /*MEDIA QUERIE VOOR HEADERS INCLUSIEF ICONS--------------------------------------*/
+                /*MEDIA QUERIE VOOR HEADERS/TITELS INCLUSIEF ICONS--------------------------------------*/
                 
                 @media screen and (min-width:42em) {
                     body > header > section:nth-of-type(2) {
@@ -596,17 +556,11 @@ article:nth-child(1) {
                         margin-left: 2.4em;
                         margin-top: 0.7em;
                     }
-                }
-                
-                @media screen and (max-width:21.5em) {
                     .titelsmall2 {
                         font-size: 1em;
                         margin-left: 5em;
                         margin-top: 1em;
                     }
-                }
-                
-                @media screen and (max-width:21.5em) {
                     .ns-logo {
                         margin-left: -1em;
                     }
@@ -625,6 +579,16 @@ article:nth-child(1) {
                         visibility: visible;
                         display: block;
                     }
+                    h3 {
+                        font-size: 0.9em;
+                    }
+                    .filter {
+                        display: block;
+                        visibility: visible;
+                    }
+                    main {
+                        margin-top: 0.5em;
+                    }
                 }
                 
                 @media screen and (min-width: 44em) {
@@ -641,18 +605,8 @@ article:nth-child(1) {
                     .bannerfoto {
                         display: none;
                     }
-                }
-                
-                @media screen and (max-width: 42em) {
                     .profiel {
                         display: none;
-                    }
-                }
-                
-                @media screen and (min-width: 42em) {
-                    .filter {
-                        display: block;
-                        visibility: visible;
                     }
                 }
                 
@@ -660,12 +614,6 @@ article:nth-child(1) {
                     .imgartikel {
                         visibility: hidden;
                         display: none;
-                    }
-                }
-                
-                @media screen and (max-width: 42em) {
-                    h3 {
-                        font-size: 0.9em;
                     }
                 }
                 
@@ -680,16 +628,61 @@ article:nth-child(1) {
                     }
                 }
                 
-                @media screen and (min-width: 42em) {
-                    main {
-                        margin-top: 0.5em;
-                    }
-                }
-                
                 @media screen and (min-width: 28em) {
                     #scrollbutton {
                         visibility: hidden;
                         display: none;
+                    }
+                }
+                /*MEDIA QUERIE VOOR DROPDOWNMENU MET CHECKBOXES----------------------------------------------------------*/
+                
+                .checkboxesmenu:not(.open-checkbox),
+                .checkboxesmenu2:not(.open-checkbox),
+                .checkboxesmenu3:not(.open-checkbox),
+                .checkboxesmenu4:not(.open-checkbox) {
+                    display: none;
+                    visibility: hidden;
+                }
+                
+                @media screen and (min-width: 42em) {
+                    .checkboxesmenu,
+                    .checkboxesmenu2,
+                    .checkboxesmenu3,
+                    .checkboxesmenu4 {
+                        display: none;
+                        visibility: hidden;
+                    }
+                }
+                /*MEDIA QUERIE VOOR VERHALEN EN ARTIKELEN-----------------------------------------------------*/
+                
+                @media screen and (max-width: 20em) {
+                    .screenshotmobiel {
+                        display: block;
+                        visibility: visible;
+                    }
+                    .screenshotdesktop {
+                        display: none;
+                        visibility: hidden;
+                    }
+                    body {
+                        margin-top: 8em;
+                    }
+                }
+                
+                @media screen and (min-width: 40em) {
+                    .screenshotmobiel {
+                        display: none;
+                        visibility: hidden;
+                    }
+                    .screenshotdesktop {
+                        display: block;
+                        visibility: visible;
+                    }
+                }
+                
+                @media screen and (min-width: 20em) {
+                    main {
+                        margin-top: -1.5em;
                     }
                 }
                 
@@ -794,68 +787,6 @@ article:nth-child(1) {
                         width: 27em;
                     }
                 }
-                /*MEDIA QUERIE VOOR DROPDOWNMENU MET CHECKBOXES----------------------------------------------------------*/
-                
-                .checkboxesmenu:not(.open-checkbox) {
-                    display: none;
-                    visibility: hidden;
-                }
-                
-                .checkboxesmenu2:not(.open-checkbox) {
-                    display: none;
-                    visibility: hidden;
-                }
-                
-                .checkboxesmenu3:not(.open-checkbox) {
-                    display: none;
-                    visibility: hidden;
-                }
-                
-                .checkboxesmenu4:not(.open-checkbox) {
-                    display: none;
-                    visibility: hidden;
-                }
-                
-                @media screen and (min-width: 42em) {
-                    .checkboxesmenu,
-                    .checkboxesmenu2,
-                    .checkboxesmenu3,
-                    .checkboxesmenu4 {
-                        display: none;
-                        visibility: hidden;
-                    }
-                }
-                
-                @media screen and (max-width: 20em) {
-                    .screenshotmobiel {
-                        display: block;
-                        visibility: visible;
-                    }
-                    .screenshotdesktop {
-                        display: none;
-                        visibility: hidden;
-                    }
-                    body {
-                        margin-top: 8em;
-                    }
-                }
-                
-                @media screen and (min-width: 40em) {
-                    .screenshotmobiel {
-                        display: none;
-                        visibility: hidden;
-                    }
-                    .screenshotdesktop {
-                        display: block;
-                        visibility: visible;
-                    }
-                }
-                
-                @media screen and (min-width: 20em) {
-                    main {
-                        margin-top: -1.5em;
-                    }
-                }
                 /* MICROINTERACTOIN PANNEKOEKMENU---------------------------------------------------------*/
                 
                 .hamburger * {
@@ -929,6 +860,4 @@ article:nth-child(1) {
                     -webkit-transform: rotate(135deg);
                     margin-top: -0.9em;
                 }
-                /*BRON microinteraction pannekoekmenu:
-
-http://inspire.blufra.me/css-examples-16-animations-effects-snippets/ */
+                /*BRON microinteraction pannekoekmenu: http://inspire.blufra.me/css-examples-16-animations-effects-snippets/*/

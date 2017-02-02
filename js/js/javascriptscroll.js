@@ -12,3 +12,5 @@ function scrollWin() {
 
 scrollButton.addEventListener('click', scrollWin);
 console.log("script started2");
+
+/*BRON: http://www.w3schools.com/jsref/met_win_scrollby.asp*/

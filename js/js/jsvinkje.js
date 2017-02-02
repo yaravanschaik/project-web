@@ -29,3 +29,5 @@ function zichtbareVinkje() {
 }
 
 checkiconstil.addEventListener('click', zichtbareVinkje);
+
+/*Hulp: student assistent Jorik van Essen*/
