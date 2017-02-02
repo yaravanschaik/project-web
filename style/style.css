@@ -479,7 +479,6 @@
                     font-size: 0.9em;
                     animation: shimmy 4s infinite;
                     animation-direction: alternate;
-                    margin-right: 12%;
                 }
                 
                 button:hover {
